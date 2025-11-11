@@ -47,6 +47,29 @@ def on_button_click():
 ## START OF APPLICATION
 ############################################################################
 
+#REMOVE THESE AFTER FIRST RUN OF THE CODE
+
+Products.objects.create(upc="78234", name="Apple", price=3.47)
+Products.objects.create(upc="14567", name="Banana", price=2.89)
+Products.objects.create(upc="90521", name="Orange", price=4.32)
+Products.objects.create(upc="63412", name="Grapes", price=1.76)
+Products.objects.create(upc="21987", name="Mango", price=2.15)
+Products.objects.create(upc="47823", name="Pear", price=5.68)
+Products.objects.create(upc="89135", name="Peach", price=3.92)
+Products.objects.create(upc="35678", name="Cherry", price=4.54)
+Products.objects.create(upc="72019", name="Strawberry", price=6.21)
+Products.objects.create(upc="46102", name="Blueberry", price=2.74)
+Products.objects.create(upc="89346", name="Raspberry", price=1.88)
+Products.objects.create(upc="50721", name="Watermelon", price=3.67)
+Products.objects.create(upc="31258", name="Cantaloupe", price=7.43)
+Products.objects.create(upc="67920", name="Pineapple", price=2.06)
+Products.objects.create(upc="24813", name="Kiwi", price=5.81)
+Products.objects.create(upc="13579", name="Plum", price=1.99)
+Products.objects.create(upc="56490", name="Apricot", price=4.27)
+Products.objects.create(upc="90876", name="Blackberry", price=3.55)
+Products.objects.create(upc="43218", name="Grapefruit", price=2.42)
+Products.objects.create(upc="61745", name="Nectarine", price=6.78)
+
 root = tk.Tk()
 
 root.title("Cash Register Scanner")
