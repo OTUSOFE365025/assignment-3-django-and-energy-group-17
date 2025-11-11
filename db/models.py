@@ -6,11 +6,11 @@ except Exception:
     print('Exception: Django Not Found, please install it with "pip install django".')
     sys.exit()
 
-
-# Sample User model
-class User(models.Model):
-    name = models.CharField(max_length=50, default="Dan")
+# change Users to Products
+class Products(models.Model):
+    upc = models.CharField(max_length=5, unique=True)
+    name = models.CharField(max_length=30)
+    price = models.DecimalField(max_digits=6, decimal_places=2)
 
     def __str__(self):
-        return self.name
-
+        return f"{self.name} ({self.upc}) - ${self.price}"
